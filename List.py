@@ -13,4 +13,6 @@ for number in num:
     list_multiples.append(number*3)
 print(list_multiples)
 
-
+#cube comprehention to generate list 
+list_numbers = [number**3 for number in range(3, 31, 3)]
+print(list_numbers)

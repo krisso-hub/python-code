@@ -1,9 +1,11 @@
 
-aliens = []
+favorite_language = {
+    'john': ['python', 'ruby', 'go'],
+    'janet': 'java',
+    'johnson': ['javascrpt', 'nodejs', 'c#', 'php']
+}
 
-for alien_number in range(30):
-    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
-    aliens.append(new_alien)
-
-for alien in aliens[:5]:
-    print(alien)
+for name, languages in favorite_language.items():
+    print(f"\n{name.title()}'s favourite laguages are: ")
+    for language in languages:
+        print(f"\t{language.title()}")

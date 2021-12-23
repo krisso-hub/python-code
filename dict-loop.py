@@ -1,11 +1,20 @@
 
-favorite_language = {
-    'john': ['python', 'ruby', 'go'],
-    'janet': 'java',
-    'johnson': ['javascrpt', 'nodejs', 'c#', 'php']
-}
+# pull request on xmas tour
 
-for name, languages in favorite_language.items():
-    print(f"\n{name.title()}'s favourite laguages are: ")
-    for language in languages:
-        print(f"\t{language.title()}")
+Responses = {}
+
+Pull_active = True
+
+while Pull_active:
+    name = input("\nWhat's your name: ")
+    message= input("Where are you traveling to this season: ") 
+
+    Responses[name]= message
+    repeat = input("\nDo you want another person to try (yes/no): ")
+    
+    if repeat == "no":
+        Pull_active = False
+
+print("---the xmass pull requst---")
+for name, message in Responses.items():
+    print(f"{name.title()} will be traveling to {message.title()} this season")

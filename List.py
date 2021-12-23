@@ -24,8 +24,10 @@ print(foods[:])
 print("\n the first three food are:")
 print(foods[:3])
 
+
 #copying list to another list
 my_foods = foods[:]
 
 my_foods.append("moi moi")
+print(my_foods)
 print(my_foods)

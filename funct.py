@@ -1,11 +1,8 @@
+# A function that greet users with a personalized message
+def greet_user(names):
+    for name in names:
+        msg = f'hello, {name.title()}'
+        print(msg)
 
-def get_formated_name(first_name, last_name, middle_name=''):
-
-    if middle_name:
-        full_name = f'{first_name} {middle_name} {last_name}'
-    else:
-        full_name = f'{first_name}  {last_name}'
-    return full_name.title()
-
-message = get_formated_name('jon', 'doma', 'dana')
-print(message)
+usenames = ['sunday', 'mark', 'mary', 'mathew']
+greet_user(usenames)

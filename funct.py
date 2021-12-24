@@ -1,32 +1,11 @@
-# A function that greet users with a personalized message
-def greet_user(names):
-    for name in names:
-        msg = f'hello, {name.title()}'
-        print(msg)
 
-usenames = ['sunday', 'mark', 'mary', 'mathew']
-greet_user(usenames)
+def make_pizza(size, *toppings):
+    print(f'\nMaking a {size}-inch pizza with the following toppings:')
+    for topping in toppings:
+        print(topping)
 
+size = 10
+toppings = ['cheese','mayornise']
 
-'''
-simulating and processing 3D models from unfinished models
-to finished models.
-'''
-def print_models(uncompleted_models, completed_models):
-    while uncompleted_models:
-        current_models = uncompleted_models.pop()
-        print(f'printing model: {current_models}')
-        completed_models.append(current_models)
-
-def show_completed_models(completed_models):
-    print('\nprinting completed models:')
-    for completed_model in completed_models:
-        print(completed_model)
-
-uncompleted_models = ['dashcam', 'robokit', 'lcd']
-completed_models = []
-
-print_models(uncompleted_models, completed_models)
-show_completed_models(completed_models)
-
-
+make_pizza(size, *toppings)
+make_pizza(12, 'tomatoes', 'ketchup', 'soy sauce')

@@ -6,3 +6,22 @@ def greet_user(names):
 
 usenames = ['sunday', 'mark', 'mary', 'mathew']
 greet_user(usenames)
+
+def print_models(uncompleted_models, completed_models):
+    while uncompleted_models:
+        current_models = uncompleted_models.pop()
+        print(f'printing model: {current_models}')
+        completed_models.append(current_models)
+
+def show_completed_models(completed_models):
+    print('\nprinting completed models:')
+    for completed_model in completed_models:
+        print(completed_model)
+
+uncompleted_models = ['dashcam', 'robokit', 'lcd']
+completed_models = []
+
+print_models(uncompleted_models, completed_models)
+show_completed_models(completed_models)
+
+

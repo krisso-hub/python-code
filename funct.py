@@ -7,6 +7,11 @@ def greet_user(names):
 usenames = ['sunday', 'mark', 'mary', 'mathew']
 greet_user(usenames)
 
+
+'''
+simulating and processing 3D models from unfinished models
+to finished models.
+'''
 def print_models(uncompleted_models, completed_models):
     while uncompleted_models:
         current_models = uncompleted_models.pop()

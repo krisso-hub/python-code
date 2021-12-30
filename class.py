@@ -19,3 +19,12 @@ print(f"{her_restaruant.name} is a place to visit")
 print(f"The restaruant is a {her_restaruant.cuisine_type}")
 her_restaruant.describe_restaruant()
 her_restaruant.open_restaurant()
+
+his_restaruant = Restaruant("Cheesecake", "Italian cuisine")
+print(f"\nI love {his_restaruant.name}")
+his_restaruant.open_restaurant()
+
+mexico_restaruant = Restaruant("Qdoba", "mexican cuisine")
+print(f"\nThe {mexico_restaruant.name} restaurant is almost every where.")
+print(f"The {mexico_restaruant.name} is a {mexico_restaruant.cuisine_type}")
+mexico_restaruant.open_restaurant()

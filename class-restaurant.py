@@ -28,3 +28,11 @@ mexico_restaruant = Restaruant("Qdoba", "mexican cuisine")
 print(f"\nThe {mexico_restaruant.name} restaurant is almost every where.")
 print(f"The {mexico_restaruant.name} is a {mexico_restaruant.cuisine_type}")
 mexico_restaruant.open_restaurant()
+
+class IceCreamStand(Restaruant)
+    def __init__(self, name, flavors):
+
+        super().__init__(name, cuisine_type)
+        self.flavors = []
+
+        pass

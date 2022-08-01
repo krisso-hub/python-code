@@ -1,0 +1,50 @@
+{
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "python handson:calculator.subtrat (python3.8)",
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "${workspaceFolder}/",
+        "lambdaHandler": "calculator.subtrat"
+      },
+      "lambda": {
+        "runtime": "python3.8",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "python handson:calculator.subtrat (python3.9)",
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "${workspaceFolder}/",
+        "lambdaHandler": "calculator.subtrat"
+      },
+      "lambda": {
+        "runtime": "python3.9",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    }
+  ]
+}
